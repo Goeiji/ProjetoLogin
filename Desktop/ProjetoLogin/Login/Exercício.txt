@@ -1,0 +1,29 @@
+Exercício:
+
+Agora que nosso sistema está pronto, vamos deixá-lo mais funcional.
+Iremos incluir um sistema de login, para acesso a área administrativa
+
+1) Crie uma pasta chamada admin
+2) Mova os arquivos: listar.php, salvar.php e excluir.php para essa pasta
+3) Certifique-se que somente os arquivos index.php e config.php estejam na raiz 
+4) Crie uma tabela no banco de dados chamada usuario, com as seguintes configurações:
+	nome  varchar(50) not null
+	login varchar(20) not null Primary Key Unique
+	senha varchar(8) not null Primary Key Unique
+5) Insira manualmente 2 registros na tabela usuário
+6) Crie um formulário de login chamado login.php
+   Esse formulário dever conter:
+		input type text para o login
+		input type password para senha
+		input type submit para enviar os dados 
+		input type reset para limpar o formulário
+	O botão enviar submete os dados para a página verifica.php
+7) A página verifica.php confere as informações dos campos com as informações do banco, 
+se os dados forem correspondentes, efetua o "login" redirecionando para o arquivo listar.php
+se não forem correspondentes, mostra uma mensagem de erro, para senha, caso esteja incorreta e para
+login caso esteja incorreto ou não exista.
+8) Ao digitar na url localhost/painel (servidor/admin) o usuário deverá ser direcionado para 
+o formulário de login
+9) Ao digitar na url localhost o usuário deverá ser direcionado para o formulário de contato
+10) Exporte o script do banco de dados e salve na pasta painel
+11) Comprima toda a pasta para o formato .zip ou .rar e envie no moodle
